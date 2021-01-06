@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import Footer from '../components/Footer.js';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -23,6 +24,8 @@ function App() {
       }
 
       <button onClick={() => setLoggedIn(!loggedIn)}>Log In</button>
+
+      <Footer />
     </div>
   );
 }
