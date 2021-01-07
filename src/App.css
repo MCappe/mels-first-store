@@ -14,14 +14,64 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   margin: 0 auto;
 }
 
+:root {
+  --header-colour: rebeccapurple;
+  --aside-colour: green;
+  --footer-colour: blue;
+  --footer-font-colour: white;
+}
+
 .App {
   text-align: center;
 }
 
-.header li {
+li {
   list-style: none;
+}
+
+.header {
+  background-color: var(--header-colour);
+  position: static;
+}
+
+.header p {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.header li {
   display: inline;
   padding: 5px;
+}
+
+.header nav {
+  padding-bottom: 10px;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: var(--aside-colour);
+}
+
+.filterBtns {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterBtns button {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--footer-colour);
+}
+
+.footer p {
+  padding: 10px;
+  color: var(--footer-font-colour);
+  font-weight: bold;
 }
 
 
